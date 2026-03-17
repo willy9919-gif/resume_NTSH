@@ -17,7 +17,7 @@ def activities():
         # 2. 讀取學生的問題
         question = request.form.get('question', '').strip()
         # 3. 查詢題庫的對應答案
-        answer = "我喜歡運動、聽音樂")
+        answer = "我喜歡玩遊戲")
         # 4. 回傳答案給學生
         return render_template('activities.html', question=question, answer=answer)
     # GET 時給空白欄位
