@@ -28,7 +28,7 @@ def competition():
 
 # 使用 dict 作為中韓翻譯的題庫
 @app.route('/ask', methods=['GET', 'POST'])
-def askE():
+def ask():
     if request.method == 'POST':
         # 2. 讀取學生的問題###^#@#Q%#@
         question1 = request.form.get('question', '').strip()
